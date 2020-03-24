@@ -1,0 +1,97 @@
+.content{
+    width: 820px;
+    margin: 20px;
+    float: left;
+}
+
+.content .title-box{
+    height: 75px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 75px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+ .article{
+    font-family: "TrebuchetMS";
+    padding: 0px 10px;
+    margin: 50px auto;
+    padding: 10px;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 2px 3px 2px #ccc;
+} 
+
+
+.article .title{
+    display: block;
+    font-size: 23px;
+    color: #00538c;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.article .description{
+    font-size: 15px;
+}
+
+.article .date{
+    display: block;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #393D3F;
+    width: 250px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 0 0 0 5px;
+}
+
+.article .view-more{
+    text-decoration: none;
+     color: #1F83BE;;
+}
+
+.article:last-of-type{
+    text-align: center;
+    height: 100px;
+    font-size: 20px;
+    font-family: "BebasNeue";
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #00538c;  
+    letter-spacing: 3px;
+}
+
+#blog:hover{
+    border: 10px solid #37bcf9;
+    border-radius: 240px;
+    color: white;
+    background: #333;
+    box-shadow: 0 0 10px gray; 
+    text-shadow: 1px 1px 1px black,
+    1px 2px 1px black,
+    1px 3px 1px black,
+    1px 4px 1px black,
+    1px 5px 1px black,
+    1px 6px 1px black;
+    animation: blick 10s infinite linear;
+}
+
+@keyframes blick{
+    0%{
+        border: 10px solid #37bcf9;
+    }
+    25%{
+        border: 10px solid green;
+    }
+    50%{
+        border: 10px solid yellow;
+    }
+    75%{
+        border: 10px solid white;
+    }
+}

@@ -1,0 +1,262 @@
+@media (max-width:1200px){
+    .navbar{
+        width: 90% !important;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .banner .title{
+        font-size: 35px;
+        text-align: center;  
+    }
+
+    .cards .card{
+        width: 17%;
+        margin: 1.4%;
+    }
+    
+    .card .text{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    .content{
+        width: 65%;
+    }
+
+    .footer-section{
+        width: 26%;
+        margin: 1.5% 3.6%;
+    }
+
+    .footer-section .images .img-icons{
+        width: 15%;
+        margin: 0.8%;
+    }
+
+    .footer-section h1{
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width:1080px){
+
+    .cards .card{
+        width: 16%;
+        margin: 1.8%;
+    }
+    .card .category{
+        font-size: 17px;
+    }
+
+    .card .text{
+        font-size: 14px;
+    }
+
+    .wrap .button{
+        width: 35%;
+        margin: 7.5%;
+    }
+}
+
+@media (max-width:970px){
+    .content{
+        width: 65%;
+    }
+
+    .footer-section h1{
+        font-size: 22px;
+    }
+}
+
+@media (max-width:890px){
+    .content{
+        width: 68%;
+    }
+
+    .sidebar{
+        width: 20%;
+    }
+
+    .sidebar .title-box{
+        font-size: 20px;
+    }
+
+    #reset{
+        display: none;
+    }
+}
+
+@media (max-width:799px){
+
+    .content{
+        width: 66%;
+    }
+
+    header .navbar ul li{
+       font-size: 15px !important;
+    }
+
+    .banner .title{
+        font-size: 29px;
+        margin: auto;
+        text-align: center; 
+        width: 100%;
+    }
+
+    .cards .card{
+        height: auto;
+    }
+    
+    .card .category{
+        font-size: 15px;
+        
+    }
+    .card .text{
+        display: none;
+    }
+
+    #html{
+        max-width: 100%;
+    }
+
+    .sidebar .title-box{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:724px){
+    
+    header{
+        height: 122px !important;
+        padding-top: 10px;
+    }
+
+    header .navbar .logo{
+        float: none !important;
+       margin: auto;
+    }
+  
+    header .navbar ul{
+        float: none !important;
+        width: 440px;
+        margin: auto !important;
+    }
+
+    header .navbar ul li{
+        font-size: 20px !important;
+     }
+
+     .article .date{
+         clear: both;
+         float: none;
+         margin-bottom: 10px;
+     }
+}
+
+@media (max-width:660px){
+    .content{
+        width: 90%;
+        float: none;
+        margin-top: 50px;
+    }
+
+    .banner .title{
+        font-size: 25px;
+        text-align: center;  
+    }
+
+    .article{
+        margin: 25px auto;
+    }
+    .sidebar{
+        float: none;
+        width: 90%;
+        margin:20px auto;
+        min-height: auto;
+    }
+    .sidebar .wrap {
+        height: auto;
+        min-height: 100px;
+        padding-bottom: 20px;
+    }
+
+    .sidebar .wrap:first-of-type{
+        min-height: 60px;
+        padding-bottom: 0;
+    }
+
+    footer{
+        height: auto;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    
+    .footer-section{
+        width: 100%;
+        margin: auto !important;
+       
+    }
+
+    .footer-section .images .img-icons{
+        width: 15%;
+        margin: 0.8%;
+    }
+
+    .footer-section h1{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    #html{
+        width: 50%;
+    }
+
+    .footer-section:last-child{
+        padding-bottom: 100px;
+    }
+
+}
+
+@media (max-width:552px){
+    .cards .card{
+        width: 30%;
+        margin: 1.4%;
+    }
+
+    .banner .title{
+        font-size: 20px;  
+    }
+}
+
+@media (max-width:475px){
+
+    .banner{
+        height: 70px;
+    }
+
+    .banner .title{
+        font-size: 18px;
+    }
+
+    .cards .card{
+        width: 16%;
+    }
+
+    .card .category{
+        font-size: 13px;
+    }
+    
+    .cards .card .icon{
+        font-size: 35px;
+    }
+
+    .cards .card .icon:hover{
+        font-size: 35px;
+    }
+}

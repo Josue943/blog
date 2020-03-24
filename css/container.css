@@ -1,0 +1,164 @@
+.container{
+    width: 1200px;
+    margin: auto;
+
+}
+
+.banner{
+    margin: 20px auto;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/bakbaner.png);
+    background-position: -300px -220px;
+    line-height: 100px;
+    border: 1px solid white; 
+    box-shadow: 0 0 2px gray;
+    overflow: hidden;
+    animation: backBanner 10s linear;
+}
+
+@keyframes backBanner {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -300px -220px;
+    }
+}
+
+.banner .title{
+    color: #fff;
+    width: 850px;
+    font-size: 45px;
+    font-family: "BebasNeue";
+    font-weight: normal;
+    text-shadow: 2px 2px 1px black;
+    text-transform: uppercase;
+    margin: 2px auto;
+    letter-spacing: 2px;
+    animation: showText 10s linear;
+}
+
+@keyframes showText{
+    0%{
+        /*con sclae hacemos que sea 5veces mas grande*/
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(600%) scale(5,5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+    }
+}
+
+.container .image{
+    height: 100px;
+}
+
+.container .cards{
+    margin-top: 40px;
+}
+
+.container .card{
+    overflow: hidden;
+    margin: 17px;
+    float: left;
+    height: 290px;
+    width: 204px;
+    border: 1px solid #ccc;
+    border: 1px 1px 2px #ddd;
+    cursor: pointer;
+    text-align: center;
+    font-family: "TrebuchetMs";
+    transition: all 300ms;
+}
+
+.container .card:hover{
+    background: black;
+}
+
+
+.container .card .icon{
+    float: none;
+    font-size: 50px;
+    margin: auto;
+    width: 100%;
+    height: 130px;
+    line-height: 130px;
+    transition: all 300ms;
+    
+}
+
+.container .card:hover .icon{
+    font-size: 70px;
+    color: #37bcf9;
+    animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon{
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+.card .category{
+    font-size: 21px;
+    font-weight: bold;
+    color: #00539D;
+    width: 100%;
+    height: 50px;
+    transition: all 300ms;
+}
+
+.card:hover .category{
+    color: white;
+    animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory{
+    from{
+        /*comenzar 300% arriba*/
+        transform: translateY(-300%);
+        color: black;
+    }
+    to{
+        /*y termina en la posicion original*/
+        transform: translateY(0%);
+        color: white;
+    }
+}
+
+ .card .text{
+    color: #0370b6;
+    font-size: 15px;
+    transition: all 300ms;
+}
+
+.card:hover .text{
+    animation: showDescription 400ms linear;
+    color: white;
+}
+@keyframes showDescription{
+    from{
+        transform: translateX(-300%);
+        color: black;
+    }
+    to{
+        transform: translateX(0%);
+    }
+}

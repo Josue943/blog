@@ -1,0 +1,187 @@
+.sidebar{
+    float: right;
+    width: 25%;
+    min-height: 1200px;
+    font-family: "TrebuchetMS";
+    margin: 20px;
+}
+.wrap, .social, .article{
+    margin-top: -20px;
+    width: 95%;
+    height: 230px;
+    margin: auto;
+     margin-top: 20px; 
+    padding-top: 2px;
+    background: white;
+    box-shadow:  0 0 1px rgba(0, 0, 0, 0.3),0 3px 7px rgba(0, 0, 0, 0.3),0 1px white inset, 0 -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.wrap:first-of-type{
+    height: 60px;
+}
+
+.title-box{
+    width: auto;
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+    background: url(../img/pxgray.png), white;
+    box-shadow: 0 1px 0 #393d3f, 1px 2px 0 #393d3f,2px 3px 0 #393d3f,3px 4px 0 #393d3f;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: block;
+    font-family: "BebasNeue";
+    letter-spacing: 2px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.wrap .search{
+    border: 1px solid #ccc;
+    width: 90%;
+    margin: 10px auto;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #ccc inset;
+    margin-bottom: 30px;
+}
+
+.wrap input{
+    width: 80%;
+    height: 15px;
+    margin-top: 7.5px;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    background: transparent;
+    color: #ccc;
+    display: block;
+    float: left;
+}
+
+.wrap  input[type="button"]{
+    color: #555;
+    height: 25px;
+    font-size: 14px;
+    display: block;
+    width: 20px;
+    margin-top: 1px;
+    margin-left: -5px;
+    transition: all 300ms;
+}
+
+.wrap  input[type="button"]:focus{
+    color: #555;
+}
+
+
+.wrap .login input[type="text"],
+.wrap  .login input[type="password"]{
+    display: block;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc inset;
+    border-radius: 5px;
+    color: gray;
+}
+
+.wrap .login input[type="text"]:focus,
+.wrap .login input[type="password"]:focus{
+    color: #555;
+    box-shadow: 1px 1px 1px grey inset;
+}
+
+#user, #padlock{
+    font-size: 18px;
+    position: absolute;
+    display: block;
+    margin-top: 24px;
+    margin-left: 15px;
+}
+
+#padlock{
+    font-size: 23px;
+   margin-top: 75px;
+   margin-left: 18px;
+}
+
+
+.wrap .button{
+    background:linear-gradient(to bottom,#3BB3E0 0%,#2ca0ca 100%);
+    color: white;
+    display: block;
+    float: left;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #156785;
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: "TrebuchetMS";
+    font-weight: lighter;
+    margin:18px 17px;
+    transition: all 300ms;
+}
+
+.wrap .button:hover{
+    box-shadow: 0 0 3px gray;
+}
+
+.wrap p{
+     margin-left: 18px;
+     font-size: 14px;
+     line-height: 20px;
+}
+
+.wrap p:hover{
+    text-decoration: underline;
+    color: #2f78bc;
+}
+
+.social{
+    height: 160px;
+}
+
+.social .icon{
+    color: black;
+    display: block;
+    float: none;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: -10px;
+    padding-bottom: 30px;
+}
+
+.social .overlay{
+    display: block;
+    height: 40px;
+    /*esta para que oculte los iconos*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px #ccc;
+    border: 3px solid white;
+    box-shadow: 0 0 4px #ccc;
+    background: #f4f7fe;
+    position: absolute;
+    padding: 5px;
+    margin-left: 90px;
+    margin-top: -70px;
+    cursor: pointer;
+    /*para que se oculte*/
+    transform: translateX(-80%);
+    /*para que no se vea*/
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.social div:hover .overlay{
+    opacity: 1;
+    /*lo regresamos a la posicion original*/
+    transform: translateX(0%);
+}
